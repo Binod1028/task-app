@@ -1,10 +1,58 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Task App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>Welcome to Task App</h1>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo"> <span>To Do List</span></div>
+
+      <div class="menu">
+        <button class="btn active"> Home</button>
+        <button class="btn"> Today <span class="badge">3</span></button>
+      </div>
+
+      <div class="section-title">
+        Categories <span class="plus"></span>
+      </div>
+      <div class="categories">
+        <button class="btn"> Web Development</button>
+        <button class="btn"> Graphics Design</button>
+        <button class="btn"> UI/UX Design</button>
+      </div>
+
+      <div class="footer-buttons">
+        <button class="btn"> Completed</button>
+        <button class="btn"> Trash</button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <div class="topbar">
+        <div class="user-info">
+          <img src="https://i.pravatar.cc/50" alt="Profile" />
+          <span>Hey! Binod</span>
+        </div>
+        <div class="actions">
+          <button class="add-btn">Add Task </button>
+          <input type="text" placeholder="Search" class="search-bar" />
+        </div>
+      </div>
+
+      <div class="task-section">
+        <h2>Tasks</h2>
+        <div class="task-actions">
+          <button>edit</button>
+          <button>delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
