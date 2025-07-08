@@ -13,7 +13,6 @@ body {
   display: flex;
   height: 100vh;
 }
-
 .sidebar {
   width: 260px;
   background-color: #fff;
@@ -139,8 +138,4 @@ body {
   border: none;
   font-size: 20px;
   cursor: pointer;
-}
-img{
-  height: 30px;
-  width: 30px;
 }
