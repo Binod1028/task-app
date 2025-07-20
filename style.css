@@ -127,15 +127,38 @@ body {
 .task-section h2 {
   margin-bottom: 10px;
 }
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f0faff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.task-select {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  accent-color: #007bff;
+}
+
+.task-text{
+  font-size: 16px;
+}
 
 .task-actions {
   display: flex;
   gap: 10px;
+  margin-top: 15px;
 }
 
 .task-actions button {
-  background: none;
+  background-color: #90e8ff;
   border: none;
-  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 14px;
 }
