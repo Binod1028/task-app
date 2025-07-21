@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const deleteBtn = document.querySelector('#delete-task');
   const searchInput = document.querySelector('.search-bar');
 
-  // Add Task
   addBtn.addEventListener('click', () => {
     const taskName = prompt("Enter your task:");
     if (taskName && taskName.trim() !== '') {
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Edit selected task
   editBtn.addEventListener('click', () => {
     const selected = document.querySelector('.task-select:checked');
     if (selected) {
@@ -32,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Delete selected task
   deleteBtn.addEventListener('click', () => {
     const selected = document.querySelector('.task-select:checked');
     if (selected) {
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Search task
   searchInput.addEventListener('input', function () {
     const query = this.value.toLowerCase();
     document.querySelectorAll('.task-item').forEach(task => {
