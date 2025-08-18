@@ -4,54 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>To Do List</title>
-  <link rel="stylesheet" href="/Css/style.css"/>
+  <link rel="stylesheet" href="Css/style.css"/>
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
-      <div class="logo"> <span>To Do List</span></div>
-
-      <div class="menu">
-        <button class="btn active"> Home</button>
-        <button class="btn"> Today <span class="badge">3</span></button>
+      <div class="logo">
+        <span>To Do List</span>
+        <img src="https://img.icons8.com/?size=100&id=ACLAf31fuu2O&format=png&color=000000" alt="logo">
       </div>
-
-      <div class="section-title">
-        Categories <span class="plus"></span>
+      <hr>
+      <div class="menu">
+        <button class="btnHome">Home</button>
+        <button class="btn">Today</button>
+      </div>
+      <hr>
+      <div class="category">
+        Categories 
+        <span class="plus">
+          <img src="https://cdn2.iconfinder.com/data/icons/social-productivity-line-art-2/128/add-128.png" alt="+">
+        </span>
       </div>
       <div class="categories">
-        <button class="btn"> Web Development</button>
-        <button class="btn"> Graphics Design</button>
-        <button class="btn"> UI/UX Design</button>
+        <button class="btn">Web Development</button>
+        <button class="btn">Graphics Design</button>
+        <button class="btn">UI/UX Design</button>
       </div>
-
+      <hr>
       <div class="footer-buttons">
-        <button class="btn"> Completed</button>
-        <button class="btn"> Trash</button>
+        <button class="btn">Completed</button>
+        <button class="btn">Trash</button>
       </div>
     </div>
-
     <div class="main">
       <div class="topbar">
         <div class="user-info">
           <img src="https://static.vecteezy.com/system/resources/previews/035/624/082/non_2x/user-profile-person-icon-in-flat-isolated-in-suitable-for-social-media-man-profiles-screensavers-depicting-male-face-silhouettes-for-apps-website-vector.jpg" alt="Profile" />
-          <span>Hey! Binod</span>
+          <span>Binod Chaudhary</span>
         </div>
         <div class="actions">
-          <button class="add-btn">Add Task </button>
-          <input type="text" placeholder="Search" class="search-bar" />
+          <button class="add-btn">Add Task</button>
+          <div class="search-container">
+            <span class="search-icon">
+              <img src="https://img.icons8.com/ios-filled/20/000000/search.png" alt="search">
+            </span>
+            <input type="text" placeholder="Search" class="search-bar" />
+          </div>
         </div>
       </div>
-
+      
       <div class="task-section">
         <h2>Tasks</h2>
         <div class="task-actions">
           <button id="edit-task"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/edit-128.png" alt="Edit"></button>
           <button id="delete-task"><img src="https://cdn4.iconfinder.com/data/icons/lylac-essential-ui/32/Trash-512.png" alt="Delete"></button>
+          <button id="complete-task"><img src="https://cdn2.iconfinder.com/data/icons/mathematic-symbols/512/Maths_symbols-12-1024.png" alt="Complete"></button>
         </div>
+        <hr>
       </div>
     </div>
   </div>
-  <script src="/Javascript/script.js"></script>
+  <script src="Javascript/script.js"></script>
 </body>
 </html>
